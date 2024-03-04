@@ -28,16 +28,62 @@ bool : we give them value of true/false, but if we output they say 0 or 1
     cout << a;
     cout << b;
     cout << c;
+    int u, y, z;
+    u = 4;
+    y = 5;
+    z = 3;
+    const int minutesPerMinute = 1;
+
 
    
    string statement = "test string";
    cout << "\n" << statement << endl;
 
 
-   //Operators
+   string firstName, lastName;
+   firstName = "Vincenet ";
+   lastName = "Phan";
+   string fullName = firstName + lastName;
+   cout << fullName << endl;
+   string anotherfirstName, anotherlastName;
+   anotherfirstName = "Maryhan ";
+   anotherlastName = "Phan";
+   string anotherfullName = anotherfirstName.append(anotherlastName);
+   cout << anotherfullName << endl;
+   int size1 = fullName.size();
+   int size2 = anotherfullName.length();
+
+   string myString = "Hello";
+   myString[0] = 'J';
+   cout << myString << endl;
+   myString = "Hello";
+   cout << myString[0] << endl;
+// Outputs H
+// Outputs Jello instead of Hello 
    
+   //Comparison operators && || !
+
+   /*Assignment Operators
+   =
+   +=
+   -=
+   *=
+   /=
+   %=
+   &=
+   |=
+   ^=
+   >>=
+   <<=
    
-   
+   BitWise Operators
+   &
+   |
+   ^
+   ~
+   <<
+   >>
+   */
    
 
 
