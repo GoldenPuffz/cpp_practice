@@ -1,9 +1,10 @@
 #include <iostream>
-using namespace std;
+#include <string>
+
 int main(){
-    cout << "Hello World\n"; //could also use the "endl" operator before the semicolon and after the quote
-    cout << "Next Line World" << endl;
-    cout << "I'm alive" << endl;
+    std::cout << "Hello World\n"; //could also use the "endl" operator before the semicolon and after the quote
+    std::cout << "Next Line World" << std::endl;
+    std::cout << "I'm alive" << std::endl;
     
     /*
 variables:
@@ -14,20 +15,20 @@ string
 bool : we give them value of true/false, but if we output they say 0 or 1
 */
     int myNum = 15;
-    cout << myNum << endl;
-    cout << "I am " << myNum << " days old" << endl;
+    std::cout << myNum << std::endl;
+    std::cout << "I am " << myNum << " days old" << std::endl;
 
     int x;
-    cout << "type an integer" << endl;
-    cin >> x;
-    cout << "Your number is " << x << endl;
+    std::cout << "type an integer" << std::endl;
+    std::cin >> x;
+    std::cout << "Your number is " << x << std::endl;
     float newNum = 32E2;
-    cout << newNum << endl;
+    std::cout << newNum << std::endl;
     char single = 'B'; //must use single quotes or you can use ASCII
     char a = 65, b = 66, c = 67;
-    cout << a;
-    cout << b;
-    cout << c;
+    std::cout << a;
+    std::cout << b;
+    std::cout << c;
     int u, y, z;
     u = 4;
     y = 5;
@@ -36,28 +37,49 @@ bool : we give them value of true/false, but if we output they say 0 or 1
 
 
    
-   string statement = "test string";
-   cout << "\n" << statement << endl;
+   std::string statement = "test string";
+   std::cout << "\n" << statement << std::endl;
 
 
-   string firstName, lastName;
+   std::string firstName, lastName;
    firstName = "Vincenet ";
    lastName = "Phan";
-   string fullName = firstName + lastName;
-   cout << fullName << endl;
-   string anotherfirstName, anotherlastName;
+   std::string fullName = firstName + lastName;
+   std::cout << fullName << std::endl;
+   std::string anotherfirstName, anotherlastName;
    anotherfirstName = "Maryhan ";
    anotherlastName = "Phan";
-   string anotherfullName = anotherfirstName.append(anotherlastName);
-   cout << anotherfullName << endl;
+   std::string anotherfullName = anotherfirstName.append(anotherlastName);
+   std::cout << anotherfullName << std::endl;
    int size1 = fullName.size();
    int size2 = anotherfullName.length();
 
-   string myString = "Hello";
+   std::string myString = "Hello";
    myString[0] = 'J';
-   cout << myString << endl;
+   std::cout << myString << std::endl;
    myString = "Hello";
-   cout << myString[0] << endl;
+   std::cout << myString[0] << std::endl;
+   
+   std::string newFullName;
+   std::cout << "Type your whole name";
+   std::getline(std::cin, newFullName);
+   std::cout << "your full name is " << newFullName;
+
+/* 
+String operators 
+\\
+\"
+\'
+\n
+\t
+
+*/
+
+
+/*USER INPUT
+we use cin >>
+*/
+
 // Outputs H
 // Outputs Jello instead of Hello 
    
